@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../core/components/Button';
 import './style.css';
 
 const Home = () => {
@@ -12,9 +13,9 @@ const Home = () => {
                 Este design foi adaptado a partir de Ant Design System for Figma,
                 de <br /> Mateusz Wierzbicki: <a href="mailto:antforfigma@gmail.com">antforfigma@gmail.com</a>
             </p>
-            <button>
-                Começar
-            </button>
+            
+            <Button text="Começar" />
+
         </div>
         
     );

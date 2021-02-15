@@ -5,16 +5,6 @@
     width: 615px;
 }
 
-button {
-    background-color: #1890ff;
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    color: #fff;
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
-}
-
 a {
     color: #1890ff;
 }
