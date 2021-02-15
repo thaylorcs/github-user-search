@@ -1,0 +1,26 @@
+.container {
+    background-color: e5e5e5;
+    margin-top: 180px;
+    margin-left: 120px;
+    width: 615px;
+}
+
+button {
+    background-color: #1890ff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+a {
+    color: #1890ff;
+}
+
+p{ 
+    color: #5a6774;
+    font-size: 20px;
+    line-height: 36px;
+}
