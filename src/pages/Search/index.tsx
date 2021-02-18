@@ -7,9 +7,9 @@ const Search = () => {
     return (
         <div className="search-container">
             <div className="box-search">
-                <h1>Encontre um perfil no github</h1>
+                <h1>Encontre um perfil no Github</h1>
                 <input type="text" placeholder="Usuário Github" />
-                <Button text="Procurar" />
+                <Button text="Encontrar" />
             </div>
             <div className="result-container">
                 <Result />
