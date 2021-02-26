@@ -2,7 +2,6 @@ import React from 'react';
 import profile from '../../assets/perfil-thaylor.jpg';
 import Button from '../Button';
 import ProfileInfo from './components/ProfileInfo';
-import Social from './components/Social';
 import './style.css'
 
 const Result = () => {
