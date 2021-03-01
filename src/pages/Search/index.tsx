@@ -1,11 +1,16 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React, { useState } from 'react';
 import Result from '../../core/components/Result';
 import './style.css';
 
 const Search = () => {
 
+    const [user, setUser] = useState('');
+
     const handleSubmit = (event: React.FormEvent<HTMLInputElement>) => {
-        event.preventDefault();
+       
+    }
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     }
 
     return (
@@ -15,10 +20,13 @@ const Search = () => {
                     <h1>Encontre um perfil no Github</h1>
                     <input 
                         type="text" 
-                        placeholder="Usuário Github" 
+                        placeholder="Usuário Github"
+                        value={user}
+                        onChange={handleChange}
+                        onSubmit={handleSubmit}
                         required
                     />
-                    <input type="submit" className="btn btn-primary" value="Encontrar"/>
+                    <input type="submit" className="btn btn-primary submit-button" value="Encontrar"/>
                 </div>
             </form>
             <div className="result-container">

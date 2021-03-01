@@ -1,4 +1,3 @@
-import react, { useState } from 'react';
 import './style.css';
 
 type Props = {

@@ -20,6 +20,23 @@ input {
     width: 50%;
 }
 
+input.submit-button {
+    background-color: #1890ff;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    transition: .5s;
+    height: 40px;
+    width: 100px;
+}
+
+input.submit-button:hover{
+    background-color: #3186D6;
+}
+
 h1 {
     margin-top: 60px;
     /* margin-left: 95px; */
