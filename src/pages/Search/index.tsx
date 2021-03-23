@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import Result from '../../core/components/Result';
+import { makeRequest } from '../../core/utils/request';
 import './style.css';
 
 const Search = () => {
 
     const [user, setUser] = useState('');
+    const [userData, setUserData] = useState();
 
     const handleSubmit = (event: React.FormEvent<HTMLInputElement>) => {
-       
+       event.preventDefault();
+        makeRequest({url: `${user}`, method: 'GET'})
     }
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setUser(event.target.value);
+        console.log(event.target.value);
     }
 
     return (
