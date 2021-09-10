@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../../core/components/Button';
 import {Link} from 'react-router-dom';
 import './style.css';

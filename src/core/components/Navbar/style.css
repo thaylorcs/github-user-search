@@ -1,7 +1,8 @@
-nav {
+.topo {
+    align-items: center;
     background-color: #1890FF;
+    justify-content: flex-start;
     display: flex;
-    width: 100vw;
     height: 65px;
 }
 

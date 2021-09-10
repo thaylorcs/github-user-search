@@ -6,16 +6,19 @@ import './style.css';
 const Search = () => {
 
     const [user, setUser] = useState('');
-    const [userData, setUserData] = useState();
+    const [userData, setUserData] = useState('');
 
     const handleSubmit = (event: React.FormEvent<HTMLInputElement>) => {
        event.preventDefault();
-        makeRequest({url: `${user}`, method: 'GET'})
+        makeRequest({url: `https://github.com/${user}`, method: 'GET'})
+        .then(response => setUserData(response.data));
+        console.log(userData);
     }
+
+    
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUser(event.target.value);
-        console.log(event.target.value);
     }
 
     return (
@@ -28,10 +31,14 @@ const Search = () => {
                         placeholder="Usuário Github"
                         value={user}
                         onChange={handleChange}
-                        onSubmit={handleSubmit}
                         required
                     />
-                    <input type="submit" className="btn btn-primary submit-button" value="Encontrar"/>
+                    <input 
+                        onSubmit={handleSubmit}
+                        type="submit" 
+                        className="btn btn-primary submit-button" 
+                        value="Encontrar"
+                    />
                 </div>
             </form>
             <div className="result-container">

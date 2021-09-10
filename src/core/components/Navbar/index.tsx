@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="topo">
             <div className="logo">
                 <Link to="/"><h4>BootCamp DevSuperior</h4></Link>
             </div>
